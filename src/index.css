@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url(SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url(Orbitron-VariableFont_wght.ttf);
+}
+
+@theme{
+  --color-primary: hsl(141, 73%, 42%);
+  --color-primary-light: hsl(141, 73%, 56%);
+  --color-primary-dark: hsl(141, 73%, 35%);
+}
+
+body{
+  color: white;
+  font-family: "Space Grotesk", Helvetica, sans-serif;
+}
+button{
+  color: black;
+}
+
+h1,h2,h3,h4,h5,h6,.heading{
+  font-family: "Orbitron", monospace;
+}
