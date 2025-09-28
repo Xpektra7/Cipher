@@ -1,4 +1,6 @@
 import { useState, useRef, useEffect } from "react";
+import HackTerminal from "./HackTerminal";
+
 export default function Hero() {
   const [logs, setLogs] = useState(["> Initializing Cipher shell..."]);
   const containerRef = useRef(null);
@@ -87,31 +89,7 @@ export default function Hero() {
           </div>
           {/* Right: interactive hack console */}
           <div className="flex items-center justify-center">
-            <div className="relative w-full  bg-black/40 border border-green-400/20 rounded-lg overflow-hidden backdrop-blur-md shadow-lg">
-              <div className="flex items-center gap-2 px-4 py-2 bg-black/60 border-b border-green-400/10">
-                <span className="w-3 h-3 bg-red-500 rounded-full"></span>
-                <span className="w-3 h-3 bg-yellow-400 rounded-full"></span>
-                <span className="w-3 h-3 bg-green-500 rounded-full"></span>
-                <span className="ml-3 text-xs text-green-400 font-mono">
-                  cipher@terminal
-                </span>
-              </div>
-
-              <div
-                ref={containerRef}
-                className="p-4 font-mono text-green-300 text-sm leading-relaxed h-[250px] overflow-y-auto scrollbar-thin scrollbar-thumb-green-800/40 scrollbar-track-transparent select-text"
-              >
-                {logs.map((line, i) => (
-                  <div key={i} className="whitespace-pre-wrap">
-                    {line}
-                  </div>
-                ))}
-              </div>
-
-              <div className="absolute bottom-2 left-4 text-green-400 animate-pulse text-sm">
-                
-              </div>
-            </div>
+            <HackTerminal/>
           </div>
         </div>
       </div>
