@@ -2,10 +2,10 @@ export default function Header() {
   const links = ["Home", "Courses", "About", "Contact"];
 
   return (
-    <header className="fixed top-0 left-0 w-full flex items-center justify-between px-8 md:px-16 py-8 bg-transparent z-10">
+    <header className="w-full h-fit fixed top-0 right-0 px-8 md:px-16 flex items-center justify-between py-8 bg-transparent z-15">
       <h1 className="text-2xl font-bold tracking-widest">CIPHER</h1>
 
-      <nav className="flex gap-8">
+      <nav className="md:flex gap-8 hidden">
         {links.map((link) => (
           <a
             key={link}
@@ -18,7 +18,7 @@ export default function Header() {
         ))}
       </nav>
 
-      <button className="px-5 py-2 bg-primary hover:bg-primary-dark text-black font-semibold rounded-lg transition">
+      <button className="button1">
         Get Started
       </button>
     </header>
