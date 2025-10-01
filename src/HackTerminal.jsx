@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function HackTerminal() {
   const [logs, setLogs] = useState([
@@ -11,7 +11,7 @@ export default function HackTerminal() {
     "> Press [Y] to Sign Up or [L] to Log In",
   ]);
 
-  useEffect(() => {
+
     const handleKeyPress = (e) => {
       const key = e.key.toLowerCase();
 
@@ -26,13 +26,17 @@ export default function HackTerminal() {
       }
     };
 
-    window.addEventListener("keydown", handleKeyPress);
-    return () => window.removeEventListener("keydown", handleKeyPress);
-  },[]);
+   
+
 
   return (
     <div
+    id="terminal"
       className="bg-black text-primary p-4 rounded-lg shadow-lg w-full max-w-md h-[400px] overflow-y-auto border border-primary-dark"
+      onMouseEnter={() => {
+        window.addEventListener("keydown",handleKeyPress);
+        return window.removeEventListener("keydown",handleKeyPress);
+      }}
     >
       {logs.map((line, i) => (
         <div key={i} className="whitespace-pre-wrap leading-tight">
