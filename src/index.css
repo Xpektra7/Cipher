@@ -20,8 +20,11 @@ body{
   color: white;
   font-family: "Space Grotesk", Helvetica, sans-serif;
 }
-button{
-  color: black;
+.button1{
+  @apply inline-flex cursor-pointer text-black items-center gap-3 bg-gradient-to-br from-primary-light to-primary-dark px-6 py-2 rounded-lg font-semibold shadow-2xl
+}
+.button2{
+  @apply inline-flex items-center gap-3 border border-slate-600 text-slate-200 px-5 py-2 rounded-lg font-medium hover:border-primary transition
 }
 
 h1,h2,h3,h4,h5,h6,.heading{
