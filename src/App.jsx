@@ -7,7 +7,7 @@ export default function App() {
   return (
     <>
     <MatrixRain/>
-    <main className="w-full\ min-h-screen bg-[hsla(0,0%,0%,0.5)] ">
+    <main className="w-full px-8 md:px-16 min-h-screen bg-[hsla(0,0%,0%,0.5)] ">
       {/* Header */}
       <Header/> 
       <Hero/>
