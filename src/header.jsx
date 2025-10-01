@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   const links = ["Home", "Courses", "About", "Contact"];
 
+  
+
+
   return (
-    <header className="w-full fixed top-0 right-0 px-8 md:px-16 flex items-center justify-between py-6 bg-transparent z-50">
+    <header className={`w-full fixed top-0 right-0 px-8 md:px-16 flex items-center justify-between py-6 ${window.scrollY > 100 ? 'bg-red-800' : 'bg-transparent'} backdrop-blur-md z-50`}>
       <h1 className="text-2xl font-bold tracking-widest">CIPHER</h1>
 
       {/* Desktop Nav */}

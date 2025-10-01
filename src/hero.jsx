@@ -52,7 +52,7 @@ export default function Hero() {
         </div>
 
         {/* small binary watermark line */}
-        <div className="mt-6 text-xs text-slate-400 font-mono select-none">
+        <div className="hidden md:inline-block mt-6 text-xs tracking-widest text-slate-400  select-none">
           01000011·01001001·01010000·01001000·01000101·01010010
         </div>
     </section>

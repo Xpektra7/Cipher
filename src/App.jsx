@@ -1,3 +1,4 @@
+import HackTerminal from "./HackTerminal";
 import Header from "./header";
 import Hero from "./hero";
 import MatrixRain from "./Matrix";
@@ -11,6 +12,7 @@ export default function App() {
       {/* Header */}
       <Header/> 
       <Hero/>
+      <HackTerminal/>
     </main>
     </>
   )
