@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
             href="#get-started"
-            className="button1 hover:scale-[1.02] transition transform"
+            className="inline-flex button1 hover:scale-[1.02] transition transform"
           >
             Get Started
             <svg

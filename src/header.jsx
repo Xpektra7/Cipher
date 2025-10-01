@@ -1,10 +1,14 @@
+import { useState } from "react";
+
 export default function Header() {
+  const [open, setOpen] = useState(false);
   const links = ["Home", "Courses", "About", "Contact"];
 
   return (
-    <header className="w-full h-fit fixed top-0 right-0 px-8 md:px-16 flex items-center justify-between py-8 bg-transparent z-15">
+    <header className="w-full fixed top-0 right-0 px-8 md:px-16 flex items-center justify-between py-6 bg-transparent z-50">
       <h1 className="text-2xl font-bold tracking-widest">CIPHER</h1>
 
+      {/* Desktop Nav */}
       <nav className="md:flex gap-8 hidden">
         {links.map((link) => (
           <a
@@ -18,9 +22,50 @@ export default function Header() {
         ))}
       </nav>
 
-      <button className="button1">
-        Get Started
-      </button>
+      <button className="button1 hidden md:block">Get Started</button>
+
+      {/* Hamburger */}
+      <div
+        className="md:hidden flex flex-col justify-between w-6 h-5 cursor-pointer relative z-50"
+        onClick={() => setOpen(!open)}
+      >
+        <span
+          className={`h-[2px] w-full bg-primary rounded transition-all duration-300 ${
+            open ? "rotate-45 translate-y-[9px]" : ""
+          }`}
+        ></span>
+        <span
+          className={`h-[2px] w-full bg-primary rounded transition-all duration-300 ${
+            open ? "opacity-0" : ""
+          }`}
+        ></span>
+        <span
+          className={`h-[2px] w-full bg-primary rounded transition-all duration-300 ${
+            open ? "-rotate-45 -translate-y-[9px]" : ""
+          }`}
+        ></span>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`absolute top-0 right-0 w-screen max-w-[560px] h-screen bg-black text-primary flex flex-col items-center justify-center gap-8 text-xl transition-transform duration-500 ${
+          open ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {links.map((link) => (
+          <a
+            key={link}
+            href={`#${link.toLowerCase()}`}
+            onClick={() => setOpen(false)}
+            className="hover:text-primary transition-colors duration-200"
+          >
+            {link}
+          </a>
+        ))}
+        <button className="button1 text-md" onClick={() => setOpen(false)}>
+          Get Started
+        </button>
+      </div>
     </header>
   );
 }
