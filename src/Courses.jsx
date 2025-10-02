@@ -28,7 +28,7 @@ export default function Paths() {
   ];
 
   return (
-    <section id="paths" className="w-full py-24 px-6 md:px-16 bg-black text-white">
+    <section id="courses" className="w-full py-24 px-6 md:px-16 bg-black text-white">
       <div className="text-center mb-12">
         <h2 className="text-3xl relative inline-block md:text-4xl font-bold mb-3">
             Choose Your Path
