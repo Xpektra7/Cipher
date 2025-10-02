@@ -1,3 +1,4 @@
+import Courses from "./Courses";
 import HackTerminal from "./HackTerminal";
 import Header from "./header";
 import Hero from "./hero";
@@ -7,12 +8,11 @@ export default function App() {
 
   return (
     <>
-    <MatrixRain/>
-    <main className="w-full px-8 md:px-16 min-h-screen bg-[hsla(0,0%,0%,0.5)] ">
+    <main className="w-full min-h-screen bg-[hsl(0,0%,0%)] ">
       {/* Header */}
       <Header/> 
       <Hero/>
-      <HackTerminal/>
+      <Courses/>
     </main>
     </>
   )
