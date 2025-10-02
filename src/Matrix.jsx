@@ -9,7 +9,7 @@ export default function MatrixRain() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
-    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+}{|";
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_+}{|0123456789";
     const fontSize = 14;
     const columns = canvas.width / fontSize;
     const drops = Array(Math.floor(columns)).fill(1);
@@ -18,7 +18,7 @@ export default function MatrixRain() {
       ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
       ctx.fillStyle = "hsla(141, 73%, 42%, 0.5)";
-      ctx.font = `${fontSize}px monospace`;
+      ctx.font = `${fontSize}px Space Grotesk`;
 
       drops.forEach((y, i) => {
         const text = letters[Math.floor(Math.random() * letters.length)];
@@ -31,5 +31,5 @@ export default function MatrixRain() {
     return () => clearInterval(interval);
   }, []);
 
-  return <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-[100%] -z-10" />;
+  return <canvas ref={canvasRef} className="absolute w-full h-screen -z-5" />;
 }
