@@ -1,18 +1,18 @@
-import { useState, useRef, useEffect } from "react";
-import HackTerminal from "./HackTerminal";
+import MatrixRain from "./Matrix";
 
 export default function Hero() {
-  const [logs, setLogs] = useState(["> Initializing Cipher shell..."]);
-  const containerRef = useRef(null);
 
   return (
-    <section className="relative w-full h-screen text-center flex flex-col z-10 items-center justify-center-safe">
+
+    <section className="relative w-full h-screen text-center flex flex-col items-center z-10 justify-center-safe">
+        <MatrixRain/>
+        <div className="h-full absolute w-full bg-black/35 -z-1"/>
         <h1 className="font-orbitron text-5xl md:text-7xl leading-tight  text-white">
           <span className="inline-block text-primary">Decode</span> the
           Future.
         </h1>
 
-        <p className="mt-4 text-lg md:text-xl text-slate-200 font-space-grotesk">
+        <p className="mt-4 text-lg md:text-xl text-text-light font-space-grotesk">
           Master cybersecurity from the core —{" "}
           <span className="text-primary-light">Learn</span>
           <span className="mx-2">•</span>
@@ -52,9 +52,11 @@ export default function Hero() {
         </div>
 
         {/* small binary watermark line */}
-        <div className="hidden md:inline-block mt-6 text-xs tracking-widest text-slate-400  select-none">
+        <div className="hidden md:inline-block mt-6 text-xs tracking-widest text-text-muted  select-none">
           01000011·01001001·01010000·01001000·01000101·01010010
         </div>
+        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-[#000]" />
+
     </section>
   );
 }
