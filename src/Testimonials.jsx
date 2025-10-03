@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-
-export default function Testimonials() {
+import { Slack, Github, Linkedin, Twitter } from "lucide-react";export default function Testimonials() {
   const testimonials = [
     { user: "@n3tghost", text: "Cypher turned learning into missions. I actually *wanted* to study." },
     { user: "@Cypherrookie", text: "The labs feel real. I broke into my first simulated system today 🔥" },
@@ -53,6 +52,14 @@ export default function Testimonials() {
           <span className="animate-pulse text-text-muted">▌</span>
         </p>
       </div>
+
+      {/* Community links */}
+        <div className="flex justify-center gap-6 mt-6">
+          <a href="#" className="text-primary hover:text-primary-light transition-colors"><Slack /></a>
+          <a href="#" className="text-primary hover:text-primary-light transition-colors"><Linkedin /></a>
+          <a href="#" className="text-primary hover:text-primary-light transition-colors"><Github /></a>
+          <a href="#" className="text-primary hover:text-primary-light transition-colors"><Twitter /></a>
+        </div>
     </section>
   );
 }
