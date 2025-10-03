@@ -29,7 +29,7 @@ import { Slack, Github, Linkedin, Twitter } from "lucide-react";export default f
   }, [index]);
 
   return (
-    <section id="testimonials" className="w-full    py-24 px-6 md:px-16 bg-bg-main text-text-main">
+    <section id="community" className="w-full    py-24 px-6 md:px-16 bg-bg-main text-text-main">
       <div className="text-center mb-12">
         <h2 className="text-3xl relative inline-block md:text-4xl font-bold mb-3">
             From the Community
