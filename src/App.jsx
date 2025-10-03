@@ -1,4 +1,5 @@
 import Courses from "./Courses";
+import Features from "./Features";
 import HackTerminal from "./HackTerminal";
 import Header from "./header";
 import Hero from "./hero";
@@ -13,6 +14,7 @@ export default function App() {
       <Header/> 
       <Hero/>
       <Courses/>
+      <Features/>
     </main>
     </>
   )
