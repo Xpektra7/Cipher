@@ -19,7 +19,7 @@
 
   /* Fonts */
   --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "Orbitron","JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace;
+  --font-mono: "Orbitron","JetBrains Mono", ui-monospace, "Courier New", monospace;
 
   /* Core Colors */
   --color-bg-main: #000000;
