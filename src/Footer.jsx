@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo & Tagline */}
         <div>
-          <h1 className="text-2xl font-bold tracking-widest mb-2">CIPHER</h1>
+          <h1 className="text-2xl font-bold tracking-widest mb-2">CYPHER</h1>
           <p className="text-text-muted text-sm">
             Master cybersecurity through missions, labs, and community challenges.
           </p>
@@ -44,7 +44,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-12 text-center text-text-muted text-sm">
-        &copy; {new Date().getFullYear()} Cipher. All rights reserved.
+        &copy; {new Date().getFullYear()} Cypher. All rights reserved.
       </div>
     </footer>
   );
