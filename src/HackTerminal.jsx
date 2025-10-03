@@ -5,7 +5,7 @@ export default function HackTerminal() {
     "[OK] Environment loaded.",
     "> Connecting to secure node...",
     "[OK] Connection established.",
-    "> Initializing Cipher terminal...",
+    "> Initializing Cypher terminal...",
     "[OK] System ready.",
     "",
     "> Press [Y] to Sign Up or [L] to Log In",

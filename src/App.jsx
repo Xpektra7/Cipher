@@ -1,9 +1,9 @@
 import Courses from "./Courses";
+import CTA from "./CTA";
 import Features from "./Features";
-import HackTerminal from "./HackTerminal";
 import Header from "./header";
 import Hero from "./hero";
-import MatrixRain from "./Matrix";
+import Testimonials from "./Testimonials";
 
 export default function App() {
 
@@ -15,6 +15,8 @@ export default function App() {
       <Hero/>
       <Courses/>
       <Features/>
+      <Testimonials/>
+      <CTA/>
     </main>
     </>
   )

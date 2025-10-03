@@ -17,7 +17,7 @@ export default function Header() {
         scrolled ? "bg-bg-main/40 backdrop-blur-md" : "bg-transparent"
       }`}
     >
-      <h1 className="text-2xl font-bold tracking-widest">CIPHER</h1>
+      <h1 className="text-2xl font-bold tracking-widest">CYPHER</h1>
 
       {/* Desktop Nav */}
       <nav className="md:flex gap-8 hidden">

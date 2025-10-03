@@ -22,13 +22,13 @@ export default function Paths() {
     },
     {
       icon: "♾️",
-      rank: "Cipher Master",
+      rank: "Cypher Master",
       desc: "Lead operations, automate attacks, and mentor new recruits. You’ve reached elite status.",
     },
   ];
-
+  
   return (
-    <section id="paths" className="w-full relative py-24 px-6 md:px-16 bg-black text-white">
+    <section id="paths" className="   w-full relative py-24 px-6 md:px-16 bg-black text-white">
       <div className="text-center mb-12">
         <h2 className="text-3xl relative inline-block md:text-4xl font-bold mb-3">
             Choose Your Path

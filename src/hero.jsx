@@ -4,9 +4,9 @@ export default function Hero() {
 
   return (
 
-    <section id="home" className="relative w-full h-screen text-center flex flex-col items-center z-10 justify-center-safe">
+    <section id="home" className="relative    w-full h-screen text-center flex flex-col items-center z-10 justify-center-safe">
         <MatrixRain/>
-        <div className="h-full absolute w-full bg-black/35 -z-1"/>
+        <div className="h-full absolute w-full bg-black/40 -z-1"/>
         <h1 className="font-orbitron text-5xl md:text-7xl leading-tight  text-white">
           <span className="inline-block text-primary">Decode</span> the
           Future.
