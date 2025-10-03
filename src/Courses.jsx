@@ -43,7 +43,7 @@ export default function Paths() {
         {paths.map((path) => (
           <div
             key={path.rank}
-            className="min-w-[280px] md:min-w-[320px] snap-start bg-gradient-to-br from-black to-primary-dark/20 border border-border rounded-2xl p-6 flex flex-col justify-between hover:border-primary-dark transition-all duration-300"
+            className="min-w-[280px] md:min-w-[320px] snap-start bg-gradient-to-br from-black to-primary-muted/15 border border-border rounded-2xl p-6 flex flex-col justify-between hover:border-primary-dark transition-all duration-300"
           >
             <div>
               <div className="text-3xl mb-4">{path.icon}</div>
