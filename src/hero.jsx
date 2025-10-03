@@ -44,10 +44,10 @@ export default function Hero() {
           </a>
 
           <a
-            href="#courses"
+            href="#paths"
             className="button2"
           >
-            Explore Courses
+            Explore Paths
           </a>
         </div>
 
