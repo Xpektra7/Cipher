@@ -47,6 +47,12 @@ body{
 .button2{
   @apply  items-center gap-3 border border-slate-600 text-text-light px-5 py-2 rounded-lg font-medium hover:border-primary transition
 }
+.card1{
+  @apply bg-bg-secondary/40 backdrop-blur-md border border-primary/10 
+hover:border-primary/40 transition-all duration-300 
+rounded-2xl p-6 flex flex-col justify-between;
+
+}
 .contain{
   @apply px-8 md:px-16;
 }
