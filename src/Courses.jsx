@@ -28,7 +28,7 @@ export default function Paths() {
   ];
 
   return (
-    <section id="courses" className="w-full py-24 px-6 md:px-16 bg-black text-white">
+    <section id="paths" className="w-full relative py-24 px-6 md:px-16 bg-black text-white">
       <div className="text-center mb-12">
         <h2 className="text-3xl relative inline-block md:text-4xl font-bold mb-3">
             Choose Your Path
@@ -43,14 +43,14 @@ export default function Paths() {
         {paths.map((path) => (
           <div
             key={path.rank}
-            className="min-w-[280px] md:min-w-[320px] snap-start bg-gradient-to-br from-black to-primary-muted/15 border border-border rounded-2xl p-6 flex flex-col justify-between hover:border-primary-dark transition-all duration-300"
+            className="min-w-[280px] md:min-w-[320px] snap-start card1"
           >
             <div>
               <div className="text-3xl mb-4">{path.icon}</div>
-              <h3 className="text-2xl font-semibold mb-3 text-primary">{path.rank}</h3>
+              <h3 className="text-2xl font-semibold mb-3 ">{path.rank}</h3>
               <p className="text-text-muted text-sm leading-relaxed">{path.desc}</p>
             </div>
-            <button className="button1 mt-6 w-fit">View Path</button>
+            <button className="button1 mt-6 w-fit">Explore Path</button>
           </div>
         ))}
       </div>

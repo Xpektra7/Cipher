@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const links = ["Home", "Courses", "About", "Contact"];
+  const links = ["Home", "Paths", "Features", "Contact"];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 60);
